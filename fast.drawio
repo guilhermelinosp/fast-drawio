@@ -1,1 +1,237 @@
-<mxfile host="app.diagrams.net" agent="opencode" compressed="true" pages="4"><diagram name="Arquitetura Geral" id="architecture-general">3Zldj6M2FIZ/DZcdAQ6EXCYkmVbaUdON1F674IC1BlNj8rG/vsdgCARGk7JMlO6M5JiD7Zj38Tk+Jgbyk/OrwFn8xkPCDNsMzwZaG7aNrLkJH8pyqSyW5biVJRI0rGzm1bCn34luWFsLGpJc2yqT5JxJmnWNAU9TEsiODQvBT91mB87CjiHDEelMQxn2AWak1+wvGspYW22z1fxXQqO4/upFPVCC69bakMc45KeOCYc4k/RIfM640DPFheTqLtoYyBecy6qWnH3ClLhd2bbv3G3mLUgq7+mAo18klfDYvX56qFxealEkOcO9VSwTBgYLqpjRKIV6AL2IAMORCElBxqW+kdAwVN1XB55KjRlmhFbV4EfMCj24YbtMjf43VCJV2eJcQpO3P3dQGhvb8ExjMYP6UvxTUElkITBcvRKBWd0ZnrPp3wwoassbFt+IzBgOiFqbqpACp3nGhVQX8KkAcskDGjAi8c0X7w0fGUsEmMwdLhjXzwCPTM4tzbTQr4QnRIoLNIlbK6V2jdN1Wc08bdOjzGbaWbT3ODO9bPRSiZqRr2Chotm+yxkcDRjdwVnwIg1JqBmfYhB7nynR0PoE/t5dAgfKWLmOy75o66h/sOdS8G+kdcct/+qloL/NGloKX6uJ3uJbUyCVU3AcRSBRMFboqCLPCAxeH4PldjE4ZoeCvTAnwRAK8Pz/BYe1numTgXDMaUAcygDzuRjWy4239Qcx+N5mtR3AAFuaxDRV4XQYSy9S7hiW+MBFogJWFTbvCYfL3W8qwPm2sZpD5Qs9kOASqK3ganzDMohpGrVtO3xJQK58FG7HdXq8Hfsm/qEbzzOdSYDDFhv3gXdWwlTYnY23ng1h9+wVKr2vh3VZSJgTbJ7lLjNv9poxPmW/uJ69sOvC60neJDJ1yuZ0FHfRC1qYAKIuJtuAnkb/D6OfDzkAr/OEIw2Vc5VFwIUoLx9Cxva6aLzFizNXGXZdTIImUX7+NGx6LFphSNFgHFJM+v0ZPAVZ3gtqDbCYBEeGL88LY4cjrDYAPm4H+HEXKDVH5mLuuGUxjQuQ43VTu0d2ONdlqhpcGAX9BfrvOdp24/qDycF6vliZ5j1RanPUJKo4FfIyHVuuUzrOISwTQr+DXMeri489wurQmdnWi2m2tg80CZ4QS/xYOFv7HTjuynUGPWMNJ/28PlXigPIU07yfeO14LiNB9n98aadVX0lIx3nUCGa3LvVJ0MhZEpFiNuBWDz/u9Gj18ug9zSVJsCJYTZzn975YyFSnneDH6ujaS5Y7d0cgXvRPSc2xqB6lOTZNfGDl2VPi+z0jAkvwsQEP88HKWfOWJy/0K55pzqcfKj/VCZVolUlYv60ceL9Xk+CFCEgn1xY9RmqgejsBRWIeQYhim6t11aXYIkbScKlerKqgynCe06CBIrGISD8g93UVBE6q9Nh9lh/VyB6tUftNzE8uEhot0uD2+hCJOpvHg3SajdapiZI/+UpyRivUTrA/UaQQ53HTeFCxq99PrxlcXn+8Ke+1fiJDm38B</diagram><diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">1VnbkqM2EP0aHpPCyNdHG5tNqjJVWztVybMCbdBGIEcI25OvT0uIm2FTXgZ7NjNVY9G60DrntLrlcYifXj9JekpeRATc8dzo6pC943nehszxQ1veSststliWlliyqLS5jeGV/QN2YGUtWAS5tZUmJQRX7NQ1hiLLIFQdG5VSXLrDjoJHHcOJxtBxQxteQ8qhN+wPFqnEWj23NfwXYHFSvXpTLZTSarQ15AmNxKVjohE9KXYGX3Ahrae0UEL3koNDfCmEKlvp1Qeuwe3CFnyjt/ZbQqbumZC6PymmcNu9eXapXL1VoCi4Yt8uUSlHwwyblLM4w3aIs0Ci4QxSMYRxaztSFkV6+u4oMmVpRo/Irlz8THlhF3e8Jder/4mNWDde0HHXOXjO2nU2qCc3YDJX+Pm7fQc2XzkLoZqJm6wn16vJyhLw4io0P45PnO0+Y6koN0z1JgUuxBTF0S5ogkKwT0VKjcwkypRap/H9cG2BZJH9BCIFJd9wSNKSxsqSfml0tFham11lUQnDhgtZWJ1YbcT1yg2T2LBkfpNYdBlJuYNYKYosgsiSekmYgtcTYoCGCwZ4l/Mj49wI18wlwUL/oj1XUvwFrZ6l+am4t2+bDXH/pXT0lrI9y08iZxgpNXE7ctZHzQga1n0aZqsbGroseBt3EhqOVMv2sSzst4d14A+y4K8Pu+AeFnoR+JlTRY9CmhAIzC7uibTt519tGIUs5Jq6SD+cxwbQbCCCiNuljmxuuJtPFELwdwH30Yfn/Ek3wzfOkEdJvj+UgsPSHyRxv9rsXPfeUPpSOo1SmipQNl201+4N2qtp0MbcGSYPD5XFYb2fD6G89nbkvgPrRTvKsrgvfsiwJFEmqewlpnidQ06yPLquJudMQ0ldKVWruOvHcBLZXfz4WaTC+6PTyIysHkMFDUM4/c/Ooq3xWR9Ft7SYGksnhsykiDZJY3hZfH+I1GXXO3nBiD8ymf4AB1ePAr90jZqid2X+EgP3e6vaoSPJ+++cPBXcmVBTXVe0hIfOmh6Ov0EMGUJFtmjHmEpK/PDl5W2i0M9mqBsmNKUG39x2hlJkpt/3nN2qtQDmiRC+loPLyXBG14TBqD1b9MPnJtGbeqsbcPb9hu9y3dxszVUsBVHgQRJI+ArsVhsSlJDGYaofq1z38yidLPs6Wc27OpmTrk6WE9XdYCUBUXXXH7gdV7IRhQyhKfuam1NLUHqh6sATUiUiRl75obHuuuHdUh6KZ6u/ltDi48gtC2uV4T0zBtW7LfRhlYD1OKa4juPvxcgbjVFzrXkgRBHNk3rwIF6tCv1JkJHxsmrfJp4trLq4fhJM89Ewta4BHyqtpvR9EmSL0ZC1q/RnC6spS58E03I0TO0K+kOl1SoZnwTaajRonfL2Y8/6Ki1Pj5kuhuov3U1f618b5PAv</diagram><diagram name="Ride Lifecycle" id="ride-lifecycle">1ZnPd5s4EMf/Go7dZ0PA5Giw3R7aS7Pv7bFPK01AW0BUyD+yf/2OQGCEyWvWNqTNIRGj0TD66CtFYztenJ8+SlKmXwSDzHEX7OR4G8d13UfvAf9oy0tjWS79oLEkkrPGtjgbnvi/YBxb654zqIytMSkhMsVL20hFUQBVlo1IKY6227PImGUoSQJWGtrwREkGF25/caZSY3UXPfdPwJO0ffVjGygnrbcxVClh4miZCCOl4geIRSakyZTsldC93tbxYimEalr5KYZMw7Wx7V7p7fKWUKi3DMjoB8UVTvtinAlVqZcWioIT9kWpyjM0LLFJMp4U2KY4CiQaDiAVR4xr05FzxvTw6FkUyiwzZuRFTfADyfYmuOMGmY7+NzYS3fiKCkCXz/wZ6AvVGTYOOJfOpxskW8u2UohbS4/U8pAoL93SoZQkRcWd2HPWK/078lFiOGnJC8pLwiuTFM4BTj0IhtxHEDko+YIuaW/pV2ZRj2ed+K1MToNnsx083+jArH3SRT6vFDbMYr26cBJ+7KFSwN6yeFLsCwbMLNwx5QqeSkJ17xE3sb2uzzzLanHWY73NehvuYrRXSorv0OsJ4nAb7dr1NW9bjq3vINn/C9m/gLwMbMgrm7Hbdt8IuQIiacqLZHLI/jbcPIxBDt3IC4IxqIPk7g/V86ahSiiFcg7l/hzqT5Vr53p/xv7jRIzx7DvMINzdbufGo6fDJogCf1S4DFMD+c1O8Q5oQxtt6E+Idnr13kr2jpodgF0uJzoYKCkoGmdgG8bbcbZR6D/4i7ecDINkpz9+u4vEjZRLKRIJVfUrCpgX3+z0JrgquNNgpSIvM/hN/q0Nkr0/5eViMQ3mQqh71SuaUv86W/+M0foMCRRYSXhrtGe8SJvyAl+uy4lNsdfPtetFmbH2dD1SCJkTPREndp1o1YuC/hT+IewcoTlXSI5Z6qElyJwrrsuaYbnzp2Dk1VfWrcdmHlgF1Z5EiRwLNB0aGoDayvMSGJe6TqrrJ10W8eJQB1jiWFH9cZVKgsvaqNt77RE3uP0E4X1EAkYPwNpKf6Q2bjUj9pJCN3RQqvQUpYO1m0pIlYpEFCTbnq2Rvat70kP1rPUHE1p9GakqTjuZKSITUN3rrUv9JV+JytAfHlgzuBWWezWsQQkyN6z+5XwmVt7VrOxKYnZUvcv2TKgerkdlVQbvgmpWUfm3kXovTfVvajORCq4mZV8r50Zl3bdmYrX6DY51Rqq0cx4n1y+zZiIX/vqH/LuDw8fzFxV1X+/rIG/7Hw==</diagram><diagram name="Platform &amp; Observability" id="platform-observability">3Zltc6M2EMc/DS/TwTzaLw22rzNN5tJzp/daBhnUCMQIgZN++q5AYGTj1ucQzzW5iU9eSWtpf/sXK8eww+z1C0dF+sRiTA3LjF8Ne2VYlm3bDvwnLW+tZea6XmtJOIlbm3k0bMnfWA3srBWJcalsrUkwRgUpdGPE8hxHQrMhztlBH7ZnNNYMBUqwtgxp2EaI4rNh30ksUmW1zMHwXzFJ0u6jF52jDHWjlaFMUcwOmgnFqBCkxiGjjKuVokow2WuvDTvkjIm2lb2GmMrg6mHbXOjt181xLq6ZULAHQQRs+2yeclWKty4oAr9CX5CKjIJhBk1ESZJDO4JZmIOhxlwQCONSdWQkjuX0YM9yoTDDiuygdV4jWinnhuVR6X0HjUQ2nikSe8YzQ+7AQ1khP695BcvXXYl5jXaEEvHWTYVd9rN7d7yzrGtYJCsNK5QbxbwkpTBC21gu84ggsEEMTAYdqLH6zavNZBbLl6c/n9WaYYv4dRAjFdgvmGVYcFiNmQ4yw1fMD8c0crssUl4cz2rfK7U8gIRUoqjkSHrfR5TQUDQvkgVpAZUryHJW5TGOFdVDSgTeFiiSvQdQuA59TyhtMreZa29c+Q/speDsBQ96vOang68+bTYG/1u70FNkK1IWrCQgFUkgk0QCu5ZnzQ0g5ucgZr4O4sFyNRCWPw2HPYJU+2AMq+V6vglHMYTzdbC5BsOoBpEUodTHptnFNVLbgjZJqyIpODPGjYoagMtVTthNAGcjBK0Tgrbp6AQnUtIL2r+gaxDCaV/IZvRGCbDk9o/rabP2wlGQK38RmOY1IH9rl3vxCJyIyMI9l9TiBIgz04C4pv+LOwmSGFLzXkQ21gUiXuC53r9JKSb1ZZ0M1DQybmB6ZqVION7+/jg+ZQMJIYkKjvISRYTl6LZDcjFySJ4QXVi6xGaT0IxQlF5VhHwGnN9wTMrx0csaEdrXNaYRWkbgQ4NjBNVvhj+KqufMdZ1OQlVgio/zPvLp567nK2eM6dwKbG+U6SNL5FGIYUolKg5VennO9A8OK2hOTCgXOdlV7Yk5Ovap6VvAsAjiNhEoeKRpoHzH00F1V6Z3omJF+RNUimeQvsqCXMCBNhLvbVUw3px78pfkNaAkyWn5Pk2p2N9MOy8zWxfMVLVizsRUlzFZJlwV5EeSp6i9TQtVEVTyfdNrUkykPGDtuIw4kU9ds1TDIg6PmuE51bkSUjd/wUW3d1NUOwrCOL1cofLE1w28nHNe/skdy/YXGi7fnQYXVmRw3H2hMHIF7+ixikd47HY24CoddbUdZHfKEvkwXx+tgS7BQQLgPF7K7z5kDlCIK4l62ALxBIuzC8l5WDmGkp/U+l7eGyPrB2L0cZGIUZn2g0fD0lf574iLmvrMCOzseMW39VPbMRe6izY31KyT6PbLuDrg9s1Jebyq3jsnu3r+Tjnp/A9D1BfJd4qR+3PH6L8FrdWfdwqad3PQ+hLsk0vPvzlCg69hPnNewdvjXwDaR8Dx7yz2+h8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" agent="opencode" compressed="false" pages="4">
+  <diagram name="Arquitetura Geral" id="architecture-general">
+    <mxGraphModel dx="3170" dy="1156" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ag-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" value="&lt;b&gt;Fast MVP — Arquitetura Geral&lt;/b&gt;&lt;br&gt;Marketplace de transporte por motocicleta — São Paulo" vertex="1">
+          <mxGeometry height="70" width="480" x="446" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-rider" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontStyle=1;" value="Rider&lt;br&gt;Dispositivo móvel" vertex="1">
+          <mxGeometry height="80" width="160" x="50" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-driver" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontStyle=1;" value="Driver&lt;br&gt;Dispositivo móvel" vertex="1">
+          <mxGeometry height="80" width="160" x="50" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-fast" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;container=1;" value="&lt;b&gt;Plataforma Fast&lt;/b&gt;&lt;br&gt;API · Lifecycle · Matching · Payments" vertex="1">
+          <mxGeometry height="565" width="520" x="430" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-auth" parent="ag-fast" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Autenticação" vertex="1">
+          <mxGeometry height="82.68292682926828" width="200" x="35" y="63.39024390243902" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-ride" parent="ag-fast" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;" value="Ciclo de vida da corrida" vertex="1">
+          <mxGeometry height="82.68292682926828" width="200" x="285" y="89.57317073170731" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-match" parent="ag-fast" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Matching e localização" vertex="1">
+          <mxGeometry height="82.68292682926828" width="200" x="35" y="318.3292682926829" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-pay" parent="ag-fast" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Pagamentos" vertex="1">
+          <mxGeometry height="82.68292682926828" width="200" x="285" y="318.3309756097561" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-events" parent="ag-fast" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;" value="Eventos de domínio" vertex="1">
+          <mxGeometry height="103.35365853658536" width="200" x="31" y="421.00390243902433" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-data" parent="ag-fast" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="Dados transacionais&lt;br&gt;PostgreSQL · Redis" vertex="1">
+          <mxGeometry height="103.35365853658536" width="200" x="285" y="421.00390243902433" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-externals" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;" value="&lt;b&gt;Sistemas externos&lt;/b&gt;&lt;br&gt;Maps Provider · Payment Provider" vertex="1">
+          <mxGeometry height="90" width="250" x="1160" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-ops" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;" value="Operations&lt;br&gt;Console de suporte" vertex="1">
+          <mxGeometry height="80" width="250" x="1160" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-e1" edge="1" parent="1" source="ag-rider" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="ag-fast">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-e2" edge="1" parent="1" source="ag-driver" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="ag-fast">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-e3" edge="1" parent="1" source="ag-fast" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="ag-externals">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-e4" edge="1" parent="1" source="ag-ops" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="ag-fast">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ag-e5" edge="1" parent="1" source="ag-events" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="ag-driver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
+    <mxGraphModel dx="3173" dy="1156" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m0-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" value="&lt;b&gt;M0 — First Vertical Slice&lt;/b&gt;&lt;br&gt;Fluxo mínimo para solicitar e aceitar uma corrida" vertex="1">
+          <mxGeometry height="70" width="560" x="520" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-rider" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontStyle=1;" value="Rider&lt;br&gt;Dispositivo móvel" vertex="1">
+          <mxGeometry height="80" width="170" x="50" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-fast" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;" value="&lt;b&gt;Plataforma Fast&lt;/b&gt;&lt;br&gt;API e ciclo de vida" vertex="1">
+          <mxGeometry height="170" width="300" x="390" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-request" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;" value="RideRequested" vertex="1">
+          <mxGeometry height="80" width="190" x="800" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-match" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;" value="Matching&lt;br&gt;encontra Driver próximo" vertex="1">
+          <mxGeometry height="80" width="210" x="1080" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-driver" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontStyle=1;" value="Driver&lt;br&gt;Dispositivo móvel" vertex="1">
+          <mxGeometry height="80" width="170" x="1370" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-accept" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;" value="RideAccepted&lt;br&gt;aceite no dispositivo" vertex="1">
+          <mxGeometry height="85" width="210" x="1080" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-confirm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Confirmação da corrida" vertex="1">
+          <mxGeometry height="80" width="220" x="390" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-note" parent="1" style="text;html=1;align=center;fontColor=#666666;" value="Legenda: linha contínua = chamada síncrona · linha tracejada = evento assíncrono&lt;br&gt;RideRequested e RideAccepted são eventos; timeout/rejeição retorna ao Matching." vertex="1">
+          <mxGeometry height="60" width="740" x="430" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e1" edge="1" parent="1" source="m0-rider" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="m0-fast">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e2" edge="1" parent="1" source="m0-fast" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="m0-request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e3" edge="1" parent="1" source="m0-request" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="m0-match">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e4" edge="1" parent="1" source="m0-match" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="m0-driver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e5" edge="1" parent="1" source="m0-driver" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="m0-accept">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e6" edge="1" parent="1" source="m0-accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="m0-confirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e7" edge="1" parent="1" source="m0-confirm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="m0-rider">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Ride Lifecycle" id="ride-lifecycle">
+    <mxGraphModel dx="2934" dy="1156" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lc-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" value="&lt;b&gt;Ride Lifecycle&lt;/b&gt;&lt;br&gt;Estado da corrida e transições principais" vertex="1">
+          <mxGeometry height="70" width="500" x="500" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-requested" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;" value="requested" vertex="1">
+          <mxGeometry height="75" width="160" x="70" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-searching" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="searching" vertex="1">
+          <mxGeometry height="75" width="160" x="330" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-accepted" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;" value="accepted" vertex="1">
+          <mxGeometry height="75" width="160" x="590" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-arriving" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="driver_arriving" vertex="1">
+          <mxGeometry height="75" width="180" x="850" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-arrived" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="driver_arrived" vertex="1">
+          <mxGeometry height="75" width="180" x="1130" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-cancelled" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontStyle=1;" value="cancelled" vertex="1">
+          <mxGeometry height="75" width="160" x="330" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-progress" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="in_progress" vertex="1">
+          <mxGeometry height="75" width="160" x="720" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-completed" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;" value="completed" vertex="1">
+          <mxGeometry height="75" width="160" x="1000" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-note" parent="1" style="text;html=1;align=center;fontColor=#666666;" value="Legenda: linha contínua = transição normal · linha tracejada = cancelamento permitido&lt;br&gt;Toda transição é validada atomicamente para impedir estados inválidos." vertex="1">
+          <mxGeometry height="60" width="720" x="390" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e1" edge="1" parent="1" source="lc-requested" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="lc-searching">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e2" edge="1" parent="1" source="lc-searching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="lc-accepted">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e3" edge="1" parent="1" source="lc-accepted" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="lc-arriving">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e4" edge="1" parent="1" source="lc-arriving" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="lc-arrived">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e5" edge="1" parent="1" source="lc-arrived" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="lc-progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e6" edge="1" parent="1" source="lc-progress" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="lc-completed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e7" edge="1" parent="1" source="lc-searching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="lc-cancelled">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lc-e8" edge="1" parent="1" source="lc-accepted" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="lc-cancelled">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Platform &amp; Observability" id="platform-observability">
+    <mxGraphModel dx="3334" dy="1556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="po-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" value="&lt;b&gt;Platform &amp;amp; Observability&lt;/b&gt;&lt;br&gt;Eventos, persistência e operação do MVP" vertex="1">
+          <mxGeometry height="70" width="500" x="462" y="-223" as="geometry" />
+        </mxCell>
+        <mxCell id="po-rider" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontStyle=1;" value="Rider&lt;br&gt;Dispositivo móvel" vertex="1">
+          <mxGeometry height="80" width="170" x="-25" y="273" as="geometry" />
+        </mxCell>
+        <mxCell id="po-fast" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1;" value="&lt;b&gt;Plataforma Fast&lt;/b&gt;&lt;br&gt;Serviços de domínio" vertex="1">
+          <mxGeometry height="180" width="270" x="304" y="223" as="geometry" />
+        </mxCell>
+        <mxCell id="po-kafka" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;" value="Kafka&lt;br&gt;Eventos de domínio" vertex="1">
+          <mxGeometry height="95" width="190" x="341" y="507.5" as="geometry" />
+        </mxCell>
+        <mxCell id="po-data" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PostgreSQL&lt;/div&gt;Fonte transacional" vertex="1">
+          <mxGeometry height="90" width="190" x="924" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="po-cache" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Redis&lt;/div&gt;Availability · realtime" vertex="1">
+          <mxGeometry height="90" width="190" x="648" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="po-telemetry" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Logs estruturados&lt;br&gt;Traces distribuídos&lt;br&gt;Métricas" vertex="1">
+          <mxGeometry height="90" width="230" x="746" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="po-ops" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;" value="Operations&lt;br&gt;Suporte e investigação" vertex="1">
+          <mxGeometry height="80" width="210" x="1138" y="273" as="geometry" />
+        </mxCell>
+        <mxCell id="po-note" parent="1" style="text;html=1;align=center;fontColor=#666666;" value="Linha contínua = leitura/escrita síncrona · Linha tracejada = publicação assíncrona" vertex="1">
+          <mxGeometry height="40" width="700" x="379" y="753" as="geometry" />
+        </mxCell>
+        <mxCell id="po-e1" edge="1" parent="1" source="po-rider" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="po-fast">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="po-e2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="po-kafka">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="436" y="409" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="po-e3" edge="1" parent="1" source="po-fast" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="po-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="po-e4" edge="1" parent="1" source="po-fast" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="po-cache">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="po-e5" edge="1" parent="1" source="po-fast" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="po-telemetry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="po-e6" edge="1" parent="1" source="po-ops" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="po-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="po-e7" edge="1" parent="1" source="po-kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="po-telemetry">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
