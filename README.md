@@ -5,6 +5,7 @@ Repositório para criação, evolução e documentação de diagramas editáveis
 ## Conteúdo
 
 - [`fast.drawio`](./fast.drawio): diagrama editável que representa a arquitetura completa do sistema em todas as etapas.
+- [`DRAWIO_STANDARDS.md`](./DRAWIO_STANDARDS.md): padrão obrigatório para criação, edição, revisão e validação dos diagramas.
 - [`LICENSE`](./LICENSE): termos de licença do projeto.
 
 ## Abrir e editar o diagrama
