@@ -59,12 +59,12 @@
     </mxGraphModel>
   </diagram>
   <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
-    <mxGraphModel dx="4133" dy="1360" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="4133" dy="1760" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="m0-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontColor=#1f2937;" value="&lt;b&gt;M0 — Backend Vertical Slice&lt;/b&gt;&lt;br&gt;Fast Platform · Go Modular Monolith" vertex="1">
-          <mxGeometry height="80" width="840" x="780" y="35" as="geometry" />
+          <mxGeometry height="80" width="840" x="1124" y="-13" as="geometry" />
         </mxCell>
         <mxCell id="m0-platform" parent="1" style="swimlane;horizontal=0;startSize=42;rounded=1;fillColor=#eaf3ff;strokeColor=#4f81bd;fontStyle=1;fontSize=16;html=1;container=1;" value="&lt;b&gt;Fast Platform&lt;/b&gt;&lt;br&gt;Go Modular Monolith" vertex="1">
           <mxGeometry height="1080" width="1953" x="609" y="105" as="geometry" />
