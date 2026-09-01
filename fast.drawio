@@ -1,1 +1,294 @@
-<mxfile host="app.diagrams.net" modified="2026-09-01T00:00:00.000Z" agent="opencode"><diagram name="Arquitetura Geral" id="architecture-general"><mxGraphModel adaptiveColors="auto" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1000"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="title" value="&lt;b&gt;Fast MVP — Arquitetura Geral&lt;/b&gt;&lt;br&gt;Marketplace de transporte por motocicleta — São Paulo" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1"><mxGeometry x="580" y="40" width="440" height="70" as="geometry"/></mxCell><mxCell id="rider" value="Rider App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="220" width="140" height="60" as="geometry"/></mxCell><mxCell id="driver" value="Driver App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="340" width="140" height="60" as="geometry"/></mxCell><mxCell id="ops" value="Operations Console" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="460" width="140" height="60" as="geometry"/></mxCell><mxCell id="api" value="Fast API / Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="280" y="340" width="160" height="70" as="geometry"/></mxCell><mxCell id="auth" value="Authentication" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="520" y="160" width="160" height="60" as="geometry"/></mxCell><mxCell id="ride" value="Ride Lifecycle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="520" y="280" width="160" height="60" as="geometry"/></mxCell><mxCell id="matching" value="Matching" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="520" y="400" width="160" height="60" as="geometry"/></mxCell><mxCell id="pricing" value="Pricing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="520" y="520" width="160" height="60" as="geometry"/></mxCell><mxCell id="location" value="Maps &amp; Location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="520" y="640" width="160" height="60" as="geometry"/></mxCell><mxCell id="payment" value="Payments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="760" y="520" width="160" height="60" as="geometry"/></mxCell><mxCell id="notify" value="Notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="760" y="640" width="160" height="60" as="geometry"/></mxCell><mxCell id="db" value="PostgreSQL&lt;br&gt;Riders · Drivers · Rides · Payments" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="1000" y="220" width="180" height="80" as="geometry"/></mxCell><mxCell id="redis" value="Redis&lt;br&gt;Disponibilidade · Realtime" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="1000" y="360" width="180" height="80" as="geometry"/></mxCell><mxCell id="kafka" value="Kafka&lt;br&gt;Domain Events" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1000" y="500" width="180" height="80" as="geometry"/></mxCell><mxCell id="obs" value="Observability&lt;br&gt;Logs · Metrics · Traces" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="1000" y="640" width="180" height="70" as="geometry"/></mxCell><mxCell id="maps" value="Maps Provider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1240" y="640" width="150" height="60" as="geometry"/></mxCell><mxCell id="psp" value="Payment Provider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1240" y="520" width="150" height="60" as="geometry"/></mxCell><mxCell id="e1" value="HTTPS" edge="1" parent="1" source="rider" target="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e2" value="HTTPS" edge="1" parent="1" source="driver" target="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e3" value="HTTPS" edge="1" parent="1" source="ops" target="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e4" edge="1" parent="1" source="api" target="auth" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e5" edge="1" parent="1" source="api" target="ride" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e6" edge="1" parent="1" source="api" target="matching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e7" edge="1" parent="1" source="api" target="pricing" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e8" edge="1" parent="1" source="api" target="location" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e9" edge="1" parent="1" source="ride" target="db" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e10" edge="1" parent="1" source="matching" target="redis" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e11" edge="1" parent="1" source="ride" target="kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e12" edge="1" parent="1" source="payment" target="psp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e13" edge="1" parent="1" source="location" target="maps" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e14" value="eventos" edge="1" parent="1" source="kafka" target="notify" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e15" value="telemetria" edge="1" parent="1" source="api" target="obs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram><diagram name="M0 — First Vertical Slice" id="m0-vertical-slice"><mxGraphModel adaptiveColors="auto" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1400" pageHeight="900"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="m0title" value="&lt;b&gt;M0 — First Vertical Slice&lt;/b&gt;&lt;br&gt;Fluxo mínimo para solicitar e aceitar uma corrida" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1"><mxGeometry x="430" y="40" width="500" height="70" as="geometry"/></mxCell><mxCell id="m0r" value="Rider App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="260" width="150" height="70" as="geometry"/></mxCell><mxCell id="m0api" value="Fast API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="260" y="260" width="150" height="70" as="geometry"/></mxCell><mxCell id="m0ride" value="Create Ride&lt;br&gt;state=requested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="480" y="260" width="180" height="70" as="geometry"/></mxCell><mxCell id="m0event1" value="RideRequested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="730" y="260" width="170" height="70" as="geometry"/></mxCell><mxCell id="m0kafka" value="Kafka" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="970" y="260" width="130" height="70" as="geometry"/></mxCell><mxCell id="m0match" value="Matching&lt;br&gt;find nearby Driver" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1170" y="260" width="180" height="70" as="geometry"/></mxCell><mxCell id="m0driver" value="Driver App&lt;br&gt;recebe solicitação" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="1170" y="500" width="180" height="70" as="geometry"/></mxCell><mxCell id="m0accept" value="Accept ride" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="900" y="500" width="160" height="70" as="geometry"/></mxCell><mxCell id="m0event2" value="RideAccepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="640" y="500" width="170" height="70" as="geometry"/></mxCell><mxCell id="m0confirm" value="Rider recebe confirmação" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="350" y="500" width="200" height="70" as="geometry"/></mxCell><mxCell id="m0n1" value="timeout/rejeição → tentar próximo Driver" style="text;html=1;align=center;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="930" y="380" width="280" height="30" as="geometry"/></mxCell><mxCell id="m0e1" edge="1" parent="1" source="m0r" target="m0api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e2" edge="1" parent="1" source="m0api" target="m0ride" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e3" edge="1" parent="1" source="m0ride" target="m0event1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e4" edge="1" parent="1" source="m0event1" target="m0kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e5" edge="1" parent="1" source="m0kafka" target="m0match" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e6" edge="1" parent="1" source="m0match" target="m0driver" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e7" edge="1" parent="1" source="m0driver" target="m0accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e8" edge="1" parent="1" source="m0accept" target="m0event2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e9" edge="1" parent="1" source="m0event2" target="m0confirm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="m0e10" edge="1" parent="1" source="m0confirm" target="m0r" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram><diagram name="Ride Lifecycle" id="ride-lifecycle"><mxGraphModel adaptiveColors="auto" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1400" pageHeight="900"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="lctitle" value="&lt;b&gt;Ride Lifecycle&lt;/b&gt;&lt;br&gt;Estado da corrida e transições principais" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1"><mxGeometry x="480" y="40" width="440" height="70" as="geometry"/></mxCell><mxCell id="requested" value="requested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="80" y="260" width="150" height="70" as="geometry"/></mxCell><mxCell id="searching" value="searching" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="300" y="260" width="150" height="70" as="geometry"/></mxCell><mxCell id="accepted" value="accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="520" y="260" width="150" height="70" as="geometry"/></mxCell><mxCell id="arriving" value="driver_arriving" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="740" y="260" width="170" height="70" as="geometry"/></mxCell><mxCell id="arrived" value="driver_arrived" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="980" y="260" width="170" height="70" as="geometry"/></mxCell><mxCell id="progress" value="in_progress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="520" y="500" width="150" height="70" as="geometry"/></mxCell><mxCell id="completed" value="completed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="740" y="500" width="150" height="70" as="geometry"/></mxCell><mxCell id="cancelled" value="cancelled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="300" y="500" width="150" height="70" as="geometry"/></mxCell><mxCell id="lce1" edge="1" parent="1" source="requested" target="searching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce2" edge="1" parent="1" source="searching" target="accepted" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce3" edge="1" parent="1" source="accepted" target="arriving" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce4" edge="1" parent="1" source="arriving" target="arrived" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce5" edge="1" parent="1" source="arrived" target="progress" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce6" edge="1" parent="1" source="progress" target="completed" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce7" value="cancelamento permitido" edge="1" parent="1" source="searching" target="cancelled" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lce8" value="cancelamento permitido" edge="1" parent="1" source="accepted" target="cancelled" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="lcnote" value="Toda transição deve ser validada atomicamente para impedir estados inválidos e aceitação duplicada." style="text;html=1;align=center;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="360" y="680" width="680" height="40" as="geometry"/></mxCell></root></mxGraphModel></diagram><diagram name="Platform &amp; Observability" id="platform-observability"><mxGraphModel adaptiveColors="auto" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1200" pageHeight="800"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="potitle" value="&lt;b&gt;Platform &amp;amp; Observability&lt;/b&gt;&lt;br&gt;Eventos, persistência e operação do MVP" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1"><mxGeometry x="350" y="40" width="500" height="70" as="geometry"/></mxCell><mxCell id="services" value="Serviços Fast&lt;br&gt;API · Lifecycle · Matching · Payments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="80" y="250" width="220" height="80" as="geometry"/></mxCell><mxCell id="eventbus" value="Kafka&lt;br&gt;RideRequested · DriverMatched&lt;br&gt;RideAccepted · RideCompleted · PaymentCompleted" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="430" y="220" width="250" height="110" as="geometry"/></mxCell><mxCell id="data" value="PostgreSQL&lt;br&gt;fonte transacional" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="820" y="180" width="180" height="80" as="geometry"/></mxCell><mxCell id="cache" value="Redis&lt;br&gt;availability · realtime" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="820" y="320" width="180" height="80" as="geometry"/></mxCell><mxCell id="telemetry" value="Logs estruturados&lt;br&gt;Traces distribuídos&lt;br&gt;Métricas de negócio e serviço" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="430" y="500" width="250" height="90" as="geometry"/></mxCell><mxCell id="ops2" value="Operations&lt;br&gt;aprovação · suporte · investigação" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="80" y="520" width="220" height="80" as="geometry"/></mxCell><mxCell id="poe1" edge="1" parent="1" source="services" target="eventbus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="poe2" edge="1" parent="1" source="services" target="data" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="poe3" edge="1" parent="1" source="services" target="cache" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="poe4" value="telemetria" edge="1" parent="1" source="services" target="telemetry" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="poe5" value="consulta" edge="1" parent="1" source="ops2" target="data" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="ponote" value="Métricas mínimas: requests · errors · latency · rides requested · rides matched · rides completed · payments successful/failed" style="text;html=1;align=center;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="250" y="680" width="700" height="40" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>
+<mxfile host="app.diagrams.net" agent="opencode" pages="4">
+  <diagram name="Arquitetura Geral" id="architecture-general">
+    <mxGraphModel dx="3173" dy="1156" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" value="&lt;b&gt;Fast MVP — Arquitetura Geral&lt;/b&gt;&lt;br&gt;Marketplace de transporte por motocicleta — São Paulo" vertex="1">
+          <mxGeometry height="70" width="440" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rider" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Rider App" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="driver" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Driver App" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ops" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;fontStyle=1;" value="Operations Console" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Fast API / Gateway" vertex="1">
+          <mxGeometry height="70" width="160" x="280" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" value="Authentication" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ride" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" value="Ride Lifecycle" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="matching" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" value="Matching" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="pricing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" value="Pricing" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="location" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" value="Maps &amp; Location" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Payments" vertex="1">
+          <mxGeometry height="60" width="160" x="760" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Notifications" vertex="1">
+          <mxGeometry height="60" width="160" x="760" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="PostgreSQL&lt;br&gt;Riders · Drivers · Rides · Payments" vertex="1">
+          <mxGeometry height="80" width="180" x="1000" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="redis" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Redis&lt;br&gt;Disponibilidade · Realtime" vertex="1">
+          <mxGeometry height="80" width="180" x="1000" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" value="Kafka&lt;br&gt;Domain Events" vertex="1">
+          <mxGeometry height="80" width="180" x="1000" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="obs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;" value="Observability&lt;br&gt;Logs · Metrics · Traces" vertex="1">
+          <mxGeometry height="70" width="180" x="1000" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="maps" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;" value="Maps Provider" vertex="1">
+          <mxGeometry height="60" width="150" x="1240" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="psp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9e6;strokeColor=#d6b656;" value="Payment Provider" vertex="1">
+          <mxGeometry height="60" width="150" x="1240" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="rider" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="api" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="driver" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="api" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="ops" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="api" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="ride">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="matching">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="pricing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="location">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="ride" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="matching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="redis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="ride" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="kafka">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="payment" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="psp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="location" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="maps">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="notify" value="eventos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="obs" value="telemetria">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
+    <mxGraphModel adaptiveColors="auto" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m0title" value="&lt;b&gt;M0 — First Vertical Slice&lt;/b&gt;&lt;br&gt;Fluxo mínimo para solicitar e aceitar uma corrida" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="500" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0r" value="Rider App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0api" value="Fast API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="260" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0ride" value="Create Ride&lt;br&gt;state=requested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="480" y="260" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0event1" value="RideRequested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="260" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0kafka" value="Kafka" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="970" y="260" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0match" value="Matching&lt;br&gt;find nearby Driver" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="260" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0driver" value="Driver App&lt;br&gt;recebe solicitação" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="500" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0accept" value="Accept ride" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="500" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0event2" value="RideAccepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="500" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0confirm" value="Rider recebe confirmação" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m0n1" value="timeout/rejeição → tentar próximo Driver" style="text;html=1;align=center;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="930" y="380" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e1" edge="1" parent="1" source="m0r" target="m0api" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e2" edge="1" parent="1" source="m0api" target="m0ride" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e3" edge="1" parent="1" source="m0ride" target="m0event1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e4" edge="1" parent="1" source="m0event1" target="m0kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e5" edge="1" parent="1" source="m0kafka" target="m0match" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e6" edge="1" parent="1" source="m0match" target="m0driver" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e7" edge="1" parent="1" source="m0driver" target="m0accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e8" edge="1" parent="1" source="m0accept" target="m0event2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e9" edge="1" parent="1" source="m0event2" target="m0confirm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0e10" edge="1" parent="1" source="m0confirm" target="m0r" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Ride Lifecycle" id="ride-lifecycle">
+    <mxGraphModel adaptiveColors="auto" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lctitle" value="&lt;b&gt;Ride Lifecycle&lt;/b&gt;&lt;br&gt;Estado da corrida e transições principais" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="440" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="requested" value="requested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="260" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="searching" value="searching" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4f8;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="accepted" value="accepted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="arriving" value="driver_arriving" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="740" y="260" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="arrived" value="driver_arrived" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="980" y="260" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="progress" value="in_progress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="520" y="500" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="completed" value="completed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="500" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cancelled" value="cancelled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lce1" edge="1" parent="1" source="requested" target="searching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce2" edge="1" parent="1" source="searching" target="accepted" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce3" edge="1" parent="1" source="accepted" target="arriving" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce4" edge="1" parent="1" source="arriving" target="arrived" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce5" edge="1" parent="1" source="arrived" target="progress" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce6" edge="1" parent="1" source="progress" target="completed" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce7" value="cancelamento permitido" edge="1" parent="1" source="searching" target="cancelled" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lce8" value="cancelamento permitido" edge="1" parent="1" source="accepted" target="cancelled" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lcnote" value="Toda transição deve ser validada atomicamente para impedir estados inválidos e aceitação duplicada." style="text;html=1;align=center;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="680" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Platform &amp; Observability" id="platform-observability">
+    <mxGraphModel dx="2188" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="potitle" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" value="&lt;b&gt;Platform &amp;amp; Observability&lt;/b&gt;&lt;br&gt;Eventos, persistência e operação do MVP" vertex="1">
+          <mxGeometry height="70" width="500" x="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="services" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Serviços Fast&lt;br&gt;API · Lifecycle · Matching · Payments" vertex="1">
+          <mxGeometry height="80" width="220" x="80" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="eventbus" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Kafka&lt;br&gt;RideRequested · DriverMatched&lt;br&gt;RideAccepted · RideCompleted · PaymentCompleted" vertex="1">
+          <mxGeometry height="110" width="250" x="430" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="PostgreSQL&lt;br&gt;fonte transacional" vertex="1">
+          <mxGeometry height="80" width="180" x="820" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Redis&lt;br&gt;availability · realtime" vertex="1">
+          <mxGeometry height="80" width="180" x="820" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="telemetry" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;" value="Logs estruturados&lt;br&gt;Traces distribuídos&lt;br&gt;Métricas de negócio e serviço" vertex="1">
+          <mxGeometry height="90" width="250" x="430" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="ops2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;" value="Operations&lt;br&gt;aprovação · suporte · investigação" vertex="1">
+          <mxGeometry height="80" width="220" x="80" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="poe1" edge="1" parent="1" source="services" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="eventbus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="poe2" edge="1" parent="1" source="services" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="poe3" edge="1" parent="1" source="services" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;" target="cache">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="poe4" edge="1" parent="1" source="services" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="telemetry" value="telemetria">
+          <mxGeometry relative="1" x="-0.5699" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="poe5" edge="1" parent="1" source="ops2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;dashed=1;" target="data" value="consulta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ponote" parent="1" style="text;html=1;align=center;fontColor=#666666;" value="Métricas mínimas: requests · errors · latency · rides requested · rides matched · rides completed · payments successful/failed" vertex="1">
+          <mxGeometry height="40" width="700" x="250" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
