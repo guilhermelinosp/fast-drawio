@@ -52,6 +52,10 @@ Não use uma forma apenas por estética. A forma deve permitir inferir o tipo do
 ## 5. Conectores, setas e eventos
 
 - Use conectores ortogonais, com origem e destino claros; evite linhas que cruzem elementos.
+- **Regra explícita de legibilidade: conectores nunca podem atravessar, cobrir ou encostar em textos**, sejam labels de nós, labels de arestas, títulos, legendas ou notas.
+- Reserve espaço livre entre nós e ao redor de textos para que os conectores permaneçam visualmente separados; quando necessário, reposicione os nós ou use uma nota dedicada.
+- Evite labels em arestas; prefira expressar a relação em texto dentro dos nós ou em notas explicativas. Use label na aresta somente quando for indispensável para entender o contrato e mantenha-o curto.
+- Prefira conectores ortogonais com cantos arredondados e, na revisão via draw.io MCP, use `routing: "libavoid"` para rotear os conectores ao redor das formas e dos textos.
 - Toda relação direcional usa seta na ponta do destino. Relações sem direção usam linha sem seta somente quando isso for realmente necessário.
 - Labels de conectores devem ser verbos ou contratos curtos, por exemplo `consulta`, `publica`, `autentica` ou `lê`.
 - Uma chamada síncrona deve usar linha contínua.
@@ -65,7 +69,7 @@ Não use uma forma apenas por estética. A forma deve permitir inferir o tipo do
 - Um elemento deve pertencer a um único limite de domínio na visão apresentada.
 - Relações entre domínios devem atravessar o limite de forma visível e ter label do contrato ou integração.
 - Não coloque usuários ou sistemas externos dentro do limite do Fast.
-- Não use um limite de domínio para esconder elementos desconexos ou compensar um layout ruim.
+- Não use um limite de domínio para esconder elementos desconectos ou compensar um layout ruim.
 
 ## 7. Nomenclatura, IDs e labels
 
@@ -102,7 +106,7 @@ Não coloque na legenda regras já evidentes nem transforme a legenda em documen
 - Faça alterações somente em `fast.drawio` e nos documentos relacionados; não adicione exportações PNG, SVG ou PDF como fonte.
 - Um commit deve ter escopo único, mensagem clara e indicar páginas/áreas alteradas quando houver mudança no diagrama.
 - Não reordene, reformate ou regenere o XML inteiro sem necessidade; preserve diffs pequenos e auditáveis.
-- Antes de publicar, abra o arquivo no draw.io e faça revisão visual. Para alterações de diagrama, use o **draw.io MCP** para abrir a página afetada, conferir que todos os elementos e conectores renderizam e confirmar que não há sobreposição ou página vazia.
+- Antes de publicar, abra o arquivo no draw.io e faça revisão visual. Para alterações de diagrama, use o **draw.io MCP** para abrir a página afetada, conferir que todos os elementos e conectores renderizam e confirmar que não há sobreposição, textos tocados por conectores ou página vazia; use `routing: "libavoid"` nessa revisão quando houver conectores.
 - Registre na descrição da mudança quais páginas foram revisadas e se a revisão foi visual ou somente documental.
 
 ## 11. Validação XML
