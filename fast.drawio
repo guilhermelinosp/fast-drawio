@@ -64,7 +64,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="m0-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontColor=#1f2937;" value="&lt;b&gt;M0 — Backend Vertical Slice&lt;/b&gt;&lt;br&gt;Fast Platform · Go Modular Monolith" vertex="1">
-          <mxGeometry height="80" width="840" x="1124" y="-13" as="geometry" />
+          <mxGeometry height="80" width="840" x="1124" y="25" as="geometry" />
         </mxCell>
         <mxCell id="m0-platform" parent="1" style="swimlane;horizontal=0;startSize=42;rounded=1;fillColor=#eaf3ff;strokeColor=#4f81bd;fontStyle=1;fontSize=16;html=1;container=1;" value="&lt;b&gt;Fast Platform&lt;/b&gt;&lt;br&gt;Go Modular Monolith" vertex="1">
           <mxGeometry height="1080" width="2115" x="447" y="105" as="geometry" />
@@ -117,17 +117,11 @@
         <mxCell id="m0-kafka-accept" parent="m0-infra-module" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="Kafka Event Backbone&lt;br&gt;&lt;b&gt;ride.accepted.v1&lt;/b&gt;" vertex="1">
           <mxGeometry height="90" width="260" x="707" y="205" as="geometry" />
         </mxCell>
-        <mxCell id="m0-e12" edge="1" parent="m0-infra-module" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-158.3499999999999" y="213.64999999999998" as="sourcePoint" />
-            <mxPoint x="176.9999999999991" y="149.99882352941177" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="m0-postgres" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5e8f6;strokeColor=#4f81bd;fontStyle=1;" value="&lt;b&gt;PostgreSQL&lt;/b&gt;&lt;br&gt;Source of Truth&lt;br&gt;rides · drivers · outbox_events" vertex="1">
           <mxGeometry height="120" width="280" x="66" y="438" as="geometry" />
         </mxCell>
         <mxCell id="m0-kafka-note" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="Event Backbone&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;not source of truth&lt;/font&gt;" vertex="1">
-          <mxGeometry height="100" width="250" x="2665" y="579" as="geometry" />
+          <mxGeometry height="100" width="250" x="2090" y="579" as="geometry" />
         </mxCell>
         <mxCell id="m0-client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" value="Client / Test Harness" vertex="1">
           <mxGeometry height="80" width="280" x="82" y="222" as="geometry" />
@@ -148,6 +142,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="m0-e4" edge="1" parent="1" source="m0-tx-create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-outbox-pub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e5" edge="1" parent="1" source="m0-outbox-pub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-kafka-request">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="m0-e6" edge="1" parent="1" source="m0-kafka-request" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;flowAnimation=1;shadow=1;" target="m0-matching">
@@ -178,10 +175,16 @@
         <mxCell id="m0-e11" edge="1" parent="1" source="m0-ride-accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;" target="m0-tx-accept">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="m0-e13" edge="1" parent="1" source="m0-tx-accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-outbox-pub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="m0-e14" edge="1" parent="1" source="m0-tx-create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;" target="m0-postgres">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="m0-e15" edge="1" parent="1" source="m0-tx-accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;" target="m0-postgres">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m0-e16" edge="1" parent="1" source="m0-outbox-pub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-kafka-accept">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
