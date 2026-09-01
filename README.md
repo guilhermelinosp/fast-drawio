@@ -1,17 +1,17 @@
 # fast-drawio
 
-Repositório para criação, evolução e documentação de diagramas editáveis no formato [draw.io](https://www.diagrams.net/). A primeira etapa estabelece uma base profissional para organizar o trabalho sem modificar o diagrama existente.
+Repositório para criação, evolução e documentação de diagramas editáveis no formato [draw.io](https://www.diagrams.net/). O arquivo principal `fast.drawio` representa a arquitetura completa do sistema em todas as etapas, da concepção à operação.
 
 ## Conteúdo
 
-- [`Untitled Diagram.drawio`](./Untitled%20Diagram.drawio): diagrama editável atualmente mantido no repositório.
+- [`fast.drawio`](./fast.drawio): diagrama editável que representa a arquitetura completa do sistema em todas as etapas.
 - [`LICENSE`](./LICENSE): termos de licença do projeto.
 
 ## Abrir e editar o diagrama
 
 1. Acesse [app.diagrams.net](https://app.diagrams.net/).
 2. Escolha onde deseja trabalhar (por exemplo, **Device** ou um serviço de armazenamento).
-3. Use **File > Open From > Device** e selecione `Untitled Diagram.drawio`.
+3. Use **File > Open From > Device** e selecione `fast.drawio`.
 4. Edite o diagrama e salve pelo menu **File > Save** ou **File > Save As**.
 5. Para contribuir, mantenha o arquivo no formato `.drawio` e envie as alterações pela branch apropriada.
 
@@ -19,7 +19,7 @@ Também é possível abrir o arquivo diretamente pelo recurso **Open Existing Di
 
 ## Convenções iniciais para diagramas
 
-- Preservar o formato `.drawio` e o nome dos arquivos existentes, salvo decisão explícita de mudança.
+- Preservar o formato `.drawio`; o arquivo `fast.drawio` é a fonte editável da arquitetura completa do sistema em todas as etapas.
 - Não mover, apagar ou substituir diagramas sem registrar claramente o motivo.
 - Preferir nomes de arquivos descritivos quando novos diagramas forem adicionados.
 - Usar títulos, legendas e rótulos consistentes em português, exceto quando houver uma necessidade técnica ou de integração.

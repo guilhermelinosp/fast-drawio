@@ -1,6 +1,6 @@
 # Contribuindo
 
-Obrigado por contribuir com o `fast-drawio`.
+Obrigado por contribuir com o `fast-drawio`. O arquivo `fast.drawio` representa a arquitetura completa do sistema em todas as etapas e deve permanecer como sua fonte editável.
 
 ## Fluxo
 
