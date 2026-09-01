@@ -59,7 +59,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
-    <mxGraphModel dx="4133" dy="1760" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="3852" dy="1760" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,7 +127,7 @@
           <mxGeometry height="120" width="280" x="66" y="438" as="geometry" />
         </mxCell>
         <mxCell id="m0-kafka-note" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" value="Event Backbone&lt;br&gt;&lt;font color=&quot;#666666&quot;&gt;not source of truth&lt;/font&gt;" vertex="1">
-          <mxGeometry height="100" width="250" x="2722" y="403" as="geometry" />
+          <mxGeometry height="100" width="250" x="2665" y="579" as="geometry" />
         </mxCell>
         <mxCell id="m0-client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" value="Client / Test Harness" vertex="1">
           <mxGeometry height="80" width="280" x="82" y="222" as="geometry" />
@@ -150,10 +150,7 @@
         <mxCell id="m0-e4" edge="1" parent="1" source="m0-tx-create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-outbox-pub">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="m0-e5" edge="1" parent="1" source="m0-outbox-pub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-kafka-request">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="m0-e6" edge="1" parent="1" source="m0-kafka-request" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-matching">
+        <mxCell id="m0-e6" edge="1" parent="1" source="m0-kafka-request" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;flowAnimation=1;shadow=1;" target="m0-matching">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="m0-e7" edge="1" parent="1" source="m0-matching" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="m0-availability">
@@ -180,14 +177,6 @@
         </mxCell>
         <mxCell id="m0-e11" edge="1" parent="1" source="m0-ride-accept" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;" target="m0-tx-accept">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="m0-e13" edge="1" parent="1" source="m0-outbox-pub" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;dashed=1;" target="m0-kafka-accept">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1554.06" y="879.06" />
-              <mxPoint x="1554.06" y="1014" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="m0-e14" edge="1" parent="1" source="m0-tx-create" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;" target="m0-postgres">
           <mxGeometry relative="1" as="geometry" />
