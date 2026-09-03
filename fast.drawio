@@ -84,7 +84,7 @@
         <mxCell id="m0-post-accept" parent="m0-ride-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#4f81bd;fontStyle=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;POST /v1/rides/{rideId}/accept&lt;/font&gt;" vertex="1">
           <mxGeometry height="64" width="350" x="78" y="535" as="geometry" />
         </mxCell>
-        <mxCell id="m0-ride-accept" parent="m0-ride-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#4f81bd;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Accept Ride&lt;/font&gt;" vertex="1">
+        <mxCell id="m0-ride-accept" parent="m0-ride-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#4f81bd;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Accept Ride&lt;/font&gt;" vertex="1">
           <mxGeometry height="64" width="350" x="78" y="635" as="geometry" />
         </mxCell>
         <mxCell id="m0-tx-accept" parent="m0-ride-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d79b00;fontSize=12;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Atomic acceptance transaction&lt;/b&gt;&lt;br&gt;verifica estado · associa driver_id&lt;br&gt;muda para accepted · insere RideAccepted na outbox&lt;br&gt;&lt;i&gt;Only one Driver can accept a Ride&lt;/i&gt;&lt;/font&gt;" vertex="1">
