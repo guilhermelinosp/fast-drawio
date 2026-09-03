@@ -105,7 +105,7 @@
         <mxCell id="m0-matching" parent="m0-matching-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Match ride.requested.v1&lt;br&gt;and select candidate&lt;/font&gt;" vertex="1">
           <mxGeometry height="78" width="250" x="65" y="171" as="geometry" />
         </mxCell>
-        <mxCell id="m0-infra-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Platform / Infrastructure&lt;/font&gt;" vertex="1">
+        <mxCell id="m0-infra-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Platform / Infrastructure&lt;/font&gt;" vertex="1">
           <mxGeometry height="340" width="1020" x="736" y="659" as="geometry" />
         </mxCell>
         <mxCell id="m0-outbox-pub" parent="m0-infra-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontStyle=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Outbox Publisher&lt;/font&gt;" vertex="1">
