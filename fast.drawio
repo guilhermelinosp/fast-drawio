@@ -59,7 +59,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
-    <mxGraphModel dx="2671" dy="1523" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="5637" dy="2231" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -166,7 +166,7 @@
           <mxGeometry height="45" width="880" x="750" y="1571" as="geometry" />
         </mxCell>
         <mxCell id="m0-note" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontColor=#6b7280;fontSize=12;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Domain Events ≠ Integration Events&lt;br&gt;No Microservices Yet&lt;br&gt;Current: Modular Monolith → Future: selective extraction&lt;/font&gt;" vertex="1">
-          <mxGeometry height="100" width="290" x="-159" y="1171" as="geometry" />
+          <mxGeometry height="100" width="290" x="-368" y="1371" as="geometry" />
         </mxCell>
         <mxCell id="m0-e1" edge="1" parent="1" source="m0-client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=classic;strokeWidth=2;" target="m0-post-rides">
           <mxGeometry relative="1" as="geometry" />
