@@ -59,7 +59,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
-    <mxGraphModel dx="5637" dy="2231" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="5282" dy="2178" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -88,7 +88,7 @@
           <mxGeometry height="120" width="350" x="78" y="745" as="geometry" />
         </mxCell>
         <mxCell id="m0-driver-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#e5f4e1;strokeColor=#82b366;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Driver Module&lt;/font&gt;" vertex="1">
-          <mxGeometry height="574" width="422" x="937" y="60" as="geometry" />
+          <mxGeometry height="574" width="422" x="1166" y="60" as="geometry" />
         </mxCell>
         <mxCell id="m0-driver-candidate" parent="m0-driver-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Driver candidato&lt;/font&gt;" vertex="1">
           <mxGeometry height="70" width="200" x="127" y="243" as="geometry" />
