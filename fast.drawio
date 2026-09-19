@@ -59,7 +59,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="M0 — First Vertical Slice" id="m0-vertical-slice">
-    <mxGraphModel dx="3771" dy="2178" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
+    <mxGraphModel dx="1586" dy="1063" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0" adaptiveColors="auto">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -69,7 +69,7 @@
         <mxCell id="m0-platform" parent="1" style="swimlane;horizontal=0;startSize=42;rounded=1;fillColor=#eaf3ff;strokeColor=#4f81bd;fontStyle=1;fontSize=16;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Fast Platform&lt;/b&gt;&lt;br&gt;Go Modular Monolith&lt;/font&gt;" vertex="1">
           <mxGeometry height="1150" width="2538" x="444" y="38" as="geometry" />
         </mxCell>
-        <mxCell id="m0-ride-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#d9eaf7;strokeColor=#6c8ebf;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Ride Module&lt;/font&gt;" vertex="1">
+        <mxCell id="m0-ride-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#d9eaf7;strokeColor=#6c8ebf;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Riders Module&lt;/font&gt;" vertex="1">
           <mxGeometry height="920" width="480" x="147" y="60" as="geometry" />
         </mxCell>
         <mxCell id="m0-post-rides" parent="m0-ride-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#4f81bd;fontStyle=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;POST /api/v1/rides&lt;/font&gt;" vertex="1">
@@ -87,7 +87,7 @@
         <mxCell id="m0-tx-accept" parent="m0-ride-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d79b00;fontSize=12;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Atomic acceptance transaction&lt;/b&gt;&lt;br&gt;verifica estado · associa driver_id&lt;br&gt;muda para accepted · insere RideAccepted na outbox&lt;br&gt;&lt;i&gt;Only one Driver can accept a Ride&lt;/i&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="120" width="350" x="78" y="745" as="geometry" />
         </mxCell>
-        <mxCell id="m0-driver-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#e5f4e1;strokeColor=#82b366;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Driver Module&lt;/font&gt;" vertex="1">
+        <mxCell id="m0-driver-module" parent="m0-platform" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#e5f4e1;strokeColor=#82b366;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Drivers Module&lt;/font&gt;" vertex="1">
           <mxGeometry height="574" width="422" x="1166" y="60" as="geometry" />
         </mxCell>
         <mxCell id="m0-driver-candidate" parent="m0-driver-module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Driver candidato&lt;/font&gt;" vertex="1">
