@@ -225,7 +225,7 @@
           <mxGeometry height="78" width="250" x="61" y="10" as="geometry" />
         </mxCell>
         <mxCell id="zlW32mSfgtbobdLl4w-c-21" parent="zlW32mSfgtbobdLl4w-c-2" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontStyle=1;html=1;container=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Platform / Infrastructure&lt;/font&gt;" vertex="1">
-          <mxGeometry height="405" width="1451" x="1611.67" y="477" as="geometry" />
+          <mxGeometry height="405" width="2285.33" x="1611.67" y="477" as="geometry" />
         </mxCell>
         <mxCell id="zlW32mSfgtbobdLl4w-c-22" parent="zlW32mSfgtbobdLl4w-c-21" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;fontStyle=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Outbox Publisher&lt;br&gt;NOTIFY · reconcile · audit&lt;/font&gt;" vertex="1">
           <mxGeometry height="70" width="250" x="86.67" y="11" as="geometry" />
